@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+
+
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width:100%;
+      display: flex;
+      margin-bottom: 16px;
+    }
+
+    .column{
+      flex-basis: calc(100%/3);
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Indiana Jones</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/raiders.jpg" alt="Raiders Of The Lost Ark">
+        <h3>Raiders Of The Lost Ark</h3>
+        <p>Raiders of the Lost Ark is a 1981 American action-adventure
+          film directed by Steven Spielberg and written by Lawrence
+          Kasdan, based on a story by George Lucas and Philip Kaufman.
+          It stars Harrison Ford, Karen Allen, Paul Freeman, Ronald
+          Lacey, John Rhys-Davies, and Denholm Elliott.</p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg" alt="The Temple Of Doom">
+        <h3>The Temple Of Doom</h3>
+        <p>In the film, after arriving in India, Indiana Jones is asked by
+            desperate villagers to find a mystical stone and rescue
+            their children from a Thuggee cult practicing child slavery,
+            black magic, and ritual human sacrifice in honor of the
+            goddess Kali.</p>
+      </div>
+
+      <div class="column">
+        <img src="images/crusade.jpg" alt="The Last Crusade">
+        <h3>The Last Crusade</h3>
+        <p> Indiana Jones and the Last Crusade is a 1989 American action-adventure
+          film directed by Steven Spielberg, from a storyco-written by executive
+          producer George Lucas. It is the third installment in the Indiana
+          Jones franchise and a sequel to Raiders of the Lost Ark (1981).</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
